@@ -1,0 +1,11 @@
+*.DS_Store
+/.envrc
+/.idea/
+/tmp/
+__pycache__/
+.cache/
+.venv3
+*pytest_cache
+*.pyc
+.coverage
+.python-version
