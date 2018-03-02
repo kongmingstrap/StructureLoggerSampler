@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "formatters": {
+    "logFormatter": {
+      "()": "logger.json_log_formatter.JsonLogFormatter"
+    }
+  },
+  "loggers": {
+    "console": {
+      "handlers": [
+        "consoleHandler"
+      ],
+      "level": "DEBUG"
+    }
+  },
+  "handlers": {
+    "consoleHandler": {
+      "class": "logging.StreamHandler",
+      "level": "DEBUG",
+      "formatter": "logFormatter"
+    }
+  },
+  "root": {
+    "level": "DEBUG",
+    "handlers": [
+      "consoleHandler"
+    ]
+  }
+}
